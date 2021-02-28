@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'fugue';
+    src: url('fugue_regular_2-webfont.woff2') format('woff2'),
+         url('fugue_regular_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'apercu_pro';
+    src: url('apercupro-bold-webfont.woff2') format('woff2'),
+         url('apercupro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
