@@ -153,6 +153,13 @@ function wunderdogs_scripts()
         _S_VERSION,
         'all'
     );
+    wp_enqueue_style(
+        'wunderdogs-css',
+        get_template_directory_uri() . '/css/global.css',
+        '',
+        _S_VERSION,
+        'all'
+    );
 
     wp_enqueue_script('wunderdogs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
