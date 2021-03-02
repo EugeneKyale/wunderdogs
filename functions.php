@@ -140,6 +140,17 @@ function wunderdogs_widgets_init()
 add_action('widgets_init', 'wunderdogs_widgets_init');
 
 /**
+ * Custom team shortcode
+ */
+function wunderdogs_departments_shortcode()
+{
+    return get_template_part('template-parts/team/cards', null);
+}
+// register shortcode
+add_shortcode('team', 'wunderdogs_departments_shortcode');
+
+
+/**
  * Enqueue scripts and styles.
  */
 function wunderdogs_scripts()
@@ -196,17 +207,5 @@ if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
 
-/*
-* include files files
-*/
-include('inc/dependancies/isotope.php');
-require_once 'inc/cpt/team.php';
-
-// function that runs when shortcode is called
-function wunderdogs_departments_shortcode()
-{
-    return get_template_part('template-parts/team/cards', null);
-    ;
-}
-// register shortcode
-add_shortcode('departments', 'wunderdogs_departments_shortcode');
+require get_template_directory() . '/inc/dependancies/isotope.php';
+require get_template_directory() . '/inc/cpt/team.php';

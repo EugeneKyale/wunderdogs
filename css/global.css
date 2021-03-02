@@ -26,6 +26,10 @@ h6 {
 .team__filter {
 	display: flex;
 }
+.team__filter-container {
+	margin-bottom: 30px;
+}
+
 .team__filter a {
 	color: #fff;
 	margin-right: 50px;
