@@ -196,6 +196,11 @@ if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
 
+/*
+* required files
+*/
+
+require_once 'inc/cpt/team.php';
 
 // function that runs when shortcode is called
 function wunderdogs_departments_shortcode()
