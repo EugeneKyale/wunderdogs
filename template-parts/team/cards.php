@@ -8,7 +8,7 @@
     );
     $the_query = new WP_Query($args); //Check the WP_Query docs to see how you can limit which posts to display
 ?>
-<section class="track">
+<section class="team">
     <div class="team__card" id="isotope-list">
     <?php
         if ($the_query->have_posts()) :
@@ -25,22 +25,18 @@
                 <?php
                     // 'item' is used as an identifier (see Setp 5, line 6)
                 ?>
-                    <div class="team__card-title-container">
-                        <div class="team__card-img">
-                            <?php echo the_post_thumbnail('full'); ?>
-                        </div>
-                        <div class="team__card-title">
+                    <div class="team__card-content">
+                        <?php echo the_post_thumbnail('full'); ?>
+                        <h6>
                             <?php the_title(); ?>
-                        </div>
-                    </div>
-
-                    <div class="team__card-bottom-wrapper">
+                        </h6>
                         <p>
                             <?php the_field('role'); ?>
                         </p>
                         <p>
                             <?php the_field('bio'); ?>
                         </p>
+                        <a href="#"> Show More </a>
                     </div>
             </div> <!-- end item -->
     <?php

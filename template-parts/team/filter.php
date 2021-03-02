@@ -1,7 +1,7 @@
 <section class="team__filter-container">
     <section id="filters" class="team__filter">
         <a href="#" data-filter="*" class="selected">
-            <p> All </p>
+            <h6> All </h6>
         </a>
         <?php
             $terms = get_terms("team-department"); // get all categories, but you can use any taxonomy
