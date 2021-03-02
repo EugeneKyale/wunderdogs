@@ -23,6 +23,7 @@ p,
 a {
 	font-family: "fugue";
 }
+
 h6 {
 	font-family: "apercu_pro";
 }
@@ -30,6 +31,7 @@ h6 {
 .team__filter {
 	display: flex;
 }
+
 .team__filter-container {
 	margin-bottom: 30px;
 }
@@ -38,6 +40,7 @@ h6 {
 	color: #fff;
 	margin-right: 50px;
 }
+
 .team__card-content a,
 .team__filter a:hover,
 .team__filter a:focus,
@@ -52,6 +55,61 @@ h6 {
 	display: flex;
 	justify-content: space-between;
 }
+
+@media only screen and (max-width: 767px) {
+
+	.team__filter {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.team__filter h6 {
+		margin: 0;
+	}
+
+	.team__filter a {
+		margin-right: 20px;
+	}
+
+	.team__filter-container {
+		margin-bottom: 20px;
+	}
+
+
+	.team__card,
+	#isotope-list {
+		display: block;
+	}
+
+	.team__card-wrapper {
+		width: 100% !important;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.team__filter {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.team__filter h6 {
+		margin: 0;
+	}
+
+	.team__filter a {
+		margin-right: 20px;
+	}
+
+	.team__filter-container {
+		margin-bottom: 30px;
+	}
+
+	.team__card-wrapper {
+		width: 43% !important;
+	}
+}
+
 .team__card-wrapper {
 	width: 22%;
 	margin-bottom: 50px;
@@ -62,15 +120,18 @@ h6 {
 	width: 100%;
 	height: auto;
 }
+
 .team__card-content h6 {
 	color: #fff;
 	margin: 0;
 }
+
 .team__card-content p {
 	font-size: 14px;
 	color: #fff;
 	margin: 10px 0;
 }
+
 .team__card-content p:nth-child(3) {
 	color: #16eb96;
 }
@@ -171,6 +232,7 @@ h6 {
 		padding: 20px;
 		border-top: 3px solid #16eb96;
 	}
+
 	#wrapper-navbar .navbar-collapse::after {
 		content: "";
 		position: absolute;
@@ -191,6 +253,7 @@ h6 {
 		padding: 20px;
 		border-top: 3px solid #16eb96;
 	}
+
 	#wrapper-navbar .navbar-collapse::after {
 		content: "";
 		position: absolute;
@@ -203,9 +266,7 @@ h6 {
 }
 
 /* elementor desktop menu */
-.elementor-widget-nav-menu
-	.elementor-nav-menu--main:not(.e--pointer-framed)
-	.elementor-item:after {
+.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after {
 	background-color: transparent !important;
 }
 
