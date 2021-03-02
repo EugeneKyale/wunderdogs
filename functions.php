@@ -197,15 +197,16 @@ if (defined('JETPACK__VERSION')) {
 }
 
 /*
-* required files
+* include files files
 */
-
+include('inc/dependancies/isotope.php');
 require_once 'inc/cpt/team.php';
 
 // function that runs when shortcode is called
 function wunderdogs_departments_shortcode()
 {
-    return get_template_part('template-parts/team/cards', null);;
+    return get_template_part('template-parts/team/cards', null);
+    ;
 }
 // register shortcode
 add_shortcode('departments', 'wunderdogs_departments_shortcode');
