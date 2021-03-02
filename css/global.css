@@ -75,25 +75,6 @@ h6 {
 	color: #16eb96;
 }
 
-.eicon-chevron-left,
-.eicon-chevron-right {
-	color: #1f1f1f;
-	background: #16eb96;
-	padding: 5px;
-	border-radius: 5px;
-	position: absolute;
-	top: 143px;
-	font-size: 20px;
-}
-
-/* testimonial arrows */
-.eicon-chevron-left {
-	left: 945px;
-}
-.eicon-chevron-right {
-	right: -10px;
-}
-
 /* menu */
 .dropdown-menu {
 	border-top: 3px solid #16eb96;
