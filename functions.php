@@ -205,7 +205,7 @@ require_once 'inc/cpt/team.php';
 // function that runs when shortcode is called
 function wunderdogs_departments_shortcode()
 {
-    return"<div> Content goes here! </div>";
+    return get_template_part('template-parts/team/cards', null);;
 }
 // register shortcode
 add_shortcode('departments', 'wunderdogs_departments_shortcode');
