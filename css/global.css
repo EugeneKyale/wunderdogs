@@ -137,6 +137,11 @@ h6 {
 }
 
 /* menu */
+nav.elementor-nav-menu--dropdown.elementor-nav-menu__container {
+	z-index: 999;
+	right: 0;
+}
+
 .dropdown-menu {
 	border-top: 3px solid #16eb96;
 }
