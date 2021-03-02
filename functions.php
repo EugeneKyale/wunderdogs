@@ -195,3 +195,12 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+// function that runs when shortcode is called
+function wunderdogs_departments_shortcode()
+{
+    return"<div> Content goes here! </div>";
+}
+// register shortcode
+add_shortcode('departments', 'wunderdogs_departments_shortcode');
