@@ -296,3 +296,30 @@ nav.elementor-nav-menu--dropdown.elementor-nav-menu__container {
 .elementor-nav-menu--dropdown .elementor-item.elementor-item-active {
 	background-color: transparent !important;
 }
+
+@media only screen and (min-width: 414px) and (max-width: 414px) {
+
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-5e2aa04,
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-eb49216,
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-7cae895 {
+		left: -165px !important;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 375px) {
+
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-5e2aa04,
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-eb49216,
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-7cae895 {
+		left: -145px !important;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 320px) {
+
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-5e2aa04,
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-eb49216,
+	body:not(.rtl) .elementor-63 .elementor-element.elementor-element-7cae895 {
+		left: -120px !important;
+	}
+}
