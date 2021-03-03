@@ -144,7 +144,9 @@ add_action('widgets_init', 'wunderdogs_widgets_init');
  */
 function wunderdogs_departments_shortcode()
 {
-    return get_template_part('template-parts/team/cards', null);
+    ob_start();
+    get_template_part('template-parts/team/cards', null);
+    return ob_get_clean();
 }
 // register shortcode
 add_shortcode('team', 'wunderdogs_departments_shortcode');
